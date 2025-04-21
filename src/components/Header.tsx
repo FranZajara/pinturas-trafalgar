@@ -11,24 +11,24 @@ export default function App() {
       </NavbarBrand>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem isActive>
-          <Link to="/">
+          <Link to="/pinturas-trafalgar">
             Inicio
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link to="/" color="foreground">
+          <Link to="/pinturas-trafalgar" color="foreground">
             Servicios
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" to="/">
+          <Link color="foreground" to="/pinturas-trafalgar/Galeria">
             Catálogo
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} to="/Contacto" color="primary">
+          <Button as={Link} to="/pinturas-trafalgar/Contacto" color="primary">
             Contacto
           </Button>
         </NavbarItem>

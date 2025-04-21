@@ -12,21 +12,19 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="max-w-3xl mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-6 text-center">Contáctanos</h1>
-      <Form onSubmit={handleSubmit} className="space-y-6">
+    <section className="max-w-3xl mx-auto py-12 px-4 flex items-center justify-center -h-screen">
+      <div className="w-full">
+        <h1 className="text-3xl font-bold mb-6 text-center">Contáctanos</h1>
+        <Form onSubmit={handleSubmit} className="space-y-6">
           <Input type="text" placeholder="Tu nombre" name="nombre" />
-
-          <Input type="email" placeholder="tucorreo@ejemplo.com" name="email" />
-
-          <Input type="tel" placeholder="123-456-7890" name="telefono" />
-
+          <Input type="email" placeholder="Tu correo: nombre@ejemplo.com" name="email" />
+          <Input type="tel" placeholder="Tu número: 123-456-7890" name="telefono" />
           <Textarea placeholder="Escribe tu mensaje..." name="mensaje" />
-
-        <Button type="submit" color="primary" className="w-full">
-          Enviar mensaje
-        </Button>
-      </Form>
+          <Button type="submit" color="primary" className="w-full">
+            Enviar mensaje
+          </Button>
+        </Form>
+      </div>
     </section>
   );
 }

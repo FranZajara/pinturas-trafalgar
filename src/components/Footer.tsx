@@ -15,7 +15,7 @@ export default function App() {
             <div className="flex flex-col">
             <p className="text-md">Pinturas Trafalgar</p>
             <p className="text-small text-default-500">
-                Servicios de Pinturas y Diseño
+                Servicios de Pinturas en general y rehabilitación de azoteas y fachadas
             </p>
             </div>
         </CardHeader>
@@ -29,7 +29,7 @@ export default function App() {
                     <ul className="text-sm text-default-500 space-y-1">
                     <li>Pintura interior</li>
                     <li>Pintura exterior</li>
-                    <li>Decoración</li>
+                    <li>Rehabilitación</li>
                     </ul>
                 </div>
                 <div>
@@ -45,7 +45,7 @@ export default function App() {
                     <ul className="text-sm text-default-500 space-y-1">
                     <li>Email: info@pinturastrafalgar.com</li>
                     <li>Teléfono: +34 600 123 456</li>
-                    <li>Dirección: Cádiz, España</li>
+                    <li>Dirección: Barbate, Cádiz, España</li>
                     </ul>
                 </div>
             </div>

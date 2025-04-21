@@ -3,6 +3,7 @@ import Footer from "./components/Footer"
 import Home from "./pages/Home"
 import Form from "./pages/Form"
 import { Route, Routes } from "react-router-dom";
+import Gallery from "./pages/Gallery";
 
 function App() {
   return (
@@ -10,8 +11,9 @@ function App() {
       <Header />
       <main className="flex-grow">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/Contacto" element={<Form />} />
+          <Route path="/pinturas-trafalgar" element={<Home />} />
+          <Route path="/pinturas-trafalgar/Contacto" element={<Form />} />
+          <Route path="/pinturas-trafalgar/Galeria" element={<Gallery />} />
         </Routes>
       </main>
       <Footer />
