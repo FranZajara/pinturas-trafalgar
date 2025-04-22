@@ -42,9 +42,6 @@ export default function App() {
           <RouterLink to="/pinturas-trafalgar">Inicio</RouterLink>
         </NavbarItem>
         <NavbarItem>
-          <RouterLink to="/pinturas-trafalgar">Servicios</RouterLink>
-        </NavbarItem>
-        <NavbarItem>
           <RouterLink to="/pinturas-trafalgar/Galeria">Catálogo</RouterLink>
         </NavbarItem>
       </NavbarContent>
@@ -64,18 +61,8 @@ export default function App() {
           </RouterLink>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <RouterLink to="/pinturas-trafalgar/Servicios" onClick={() => setIsMenuOpen(false)}>
-            Servicios
-          </RouterLink>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
           <RouterLink to="/pinturas-trafalgar/Galeria" onClick={() => setIsMenuOpen(false)}>
             Catálogo
-          </RouterLink>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <RouterLink to="/pinturas-trafalgar/Contacto" onClick={() => setIsMenuOpen(false)}>
-            Contacto
           </RouterLink>
         </NavbarMenuItem>
       </NavbarMenu>
