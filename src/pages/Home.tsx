@@ -17,7 +17,7 @@ export default function Home() {
             <p>
               En <strong>Pinturas Trafalgar</strong>, nos dedicamos a ofrecer servicios de pintura interior y exterior para hogares, negocios y comunidades. Rehabilitación de azoteas y fachadas. Contamos con un equipo profesional y los mejores materiales del mercado.
             </p>
-            <Button color="primary" as={Link} to="/pinturas-trafalgar/Contacto">
+            <Button color="primary" as={Link} to="/Contacto">
               Solicita presupuesto
             </Button>
           </div>

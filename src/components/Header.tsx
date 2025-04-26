@@ -36,16 +36,16 @@ export default function App() {
 
       <NavbarContent justify="center">
         <NavbarItem isActive>
-          <RouterLink to="/pinturas-trafalgar">Inicio</RouterLink>
+          <RouterLink to="/">Inicio</RouterLink>
         </NavbarItem>
         <NavbarItem>
-          <RouterLink to="/pinturas-trafalgar/Galeria">Catálogo</RouterLink>
+          <RouterLink to="/Galeria">Catálogo</RouterLink>
         </NavbarItem>
       </NavbarContent>
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={RouterLink} to="/pinturas-trafalgar/Contacto" color="primary">
+          <Button as={RouterLink} to="/Contacto" color="primary">
             Contacto
           </Button>
         </NavbarItem>
@@ -53,12 +53,12 @@ export default function App() {
 
       <NavbarMenu>
         <NavbarMenuItem>
-          <RouterLink to="/pinturas-trafalgar" onClick={() => setIsMenuOpen(false)}>
+          <RouterLink to="/" onClick={() => setIsMenuOpen(false)}>
             Inicio
           </RouterLink>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <RouterLink to="/pinturas-trafalgar/Galeria" onClick={() => setIsMenuOpen(false)}>
+          <RouterLink to="/Galeria" onClick={() => setIsMenuOpen(false)}>
             Catálogo
           </RouterLink>
         </NavbarMenuItem>

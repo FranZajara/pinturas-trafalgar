@@ -17,9 +17,9 @@ function App() {
       <Header />
       <main className="flex-grow backdrop-brightness-95">
         <Routes>
-          <Route path="/pinturas-trafalgar" element={<Home />} />
-          <Route path="/pinturas-trafalgar/Contacto" element={<Form />} />
-          <Route path="/pinturas-trafalgar/Galeria" element={<Gallery />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Contacto" element={<Form />} />
+          <Route path="/Galeria" element={<Gallery />} />
         </Routes>
       </main>
       <Footer />
