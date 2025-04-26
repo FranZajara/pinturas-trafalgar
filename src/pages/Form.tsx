@@ -36,7 +36,7 @@ export default function ContactForm() {
   };
 
   return (
-    <section className="max-w-3xl mx-auto py-12 px-4 flex items-center justify-center h-screen">
+    <section className="max-w-3xl mx-auto py-12 px-4 flex items-center justify-center">
       <div className="w-full">
         <h1 className="text-3xl font-bold mb-6 text-center">Contáctanos</h1>
         <Form onSubmit={handleSubmit} className="space-y-6">
