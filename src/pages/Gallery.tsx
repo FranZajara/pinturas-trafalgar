@@ -34,7 +34,7 @@ const projects = [
 export default function Gallery() {
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-10">
-      <h1 className="text-3xl font-bold text-center text-blue-800 mb-8">Galería de Proyectos</h1>
+      <h1 className="text-3xl font-bold text-center text-black-800 mb-8">Galería de Proyectos</h1>
 
       <Tabs color="primary" aria-label="Galería de proyectos" classNames={{tab: "whitespace-normal h-auto"}}>
         {projects.map((project) => (

@@ -1,13 +1,13 @@
 // src/pages/Home.tsx
 import { Button, Card, CardBody, CardHeader } from "@heroui/react";
-import { Link } from "@heroui/react";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
     <div className="px-6 py-10 max-w-4xl mx-auto">
       <Card className="mb-10">
         <CardHeader className="flex-col items-center gap-3">
-          <h1 className="text-3xl font-bold text-blue-600 p-3">Bienvenido a Pinturas Trafalgar</h1>
+          <h1 className="text-3xl font-bold text-black-600 p-3">Bienvenido a Pinturas Trafalgar</h1>
           <p className="text-default-500 text-lg font-semibold">
             Transformamos espacios con color y calidad.
           </p>
@@ -17,7 +17,7 @@ export default function Home() {
             <p>
               En <strong>Pinturas Trafalgar</strong>, nos dedicamos a ofrecer servicios de pintura interior y exterior para hogares, negocios y comunidades. Rehabilitación de azoteas y fachadas. Contamos con un equipo profesional y los mejores materiales del mercado.
             </p>
-            <Button color="primary" as={Link} href="/pinturas-trafalgar/Contacto">
+            <Button color="primary" as={Link} to="/pinturas-trafalgar/Contacto">
               Solicita presupuesto
             </Button>
           </div>
