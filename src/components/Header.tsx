@@ -3,7 +3,6 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
   Button,
@@ -19,25 +18,23 @@ export default function App() {
   return (
     <Navbar
       onMenuOpenChange={setIsMenuOpen}
-      isMenuOpen={isMenuOpen} // <- IMPORTANTE
+      isMenuOpen={isMenuOpen}
     >
       <NavbarContent>
-        <NavbarMenuToggle
-          aria-label={isMenuOpen ? "Cerrar menú" : "Abrir menú"}
-          className="sm:hidden"
-        />
         <NavbarBrand>
           <Image
             src={logo}
             alt="Logo Pinturas Trafalgar"
             width={40}
-            height={40}
+            height={30}
           />
-          <p className="font-bold text-inherit">Pinturas Trafalgar</p>
+          <p className="font-bold text-inherit whitespace-pre-wrap">
+            Pinturas Trafalgar
+          </p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent justify="center">
         <NavbarItem isActive>
           <RouterLink to="/pinturas-trafalgar">Inicio</RouterLink>
         </NavbarItem>

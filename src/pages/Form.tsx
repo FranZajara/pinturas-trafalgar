@@ -43,7 +43,7 @@ export default function ContactForm() {
           <Input type="text" placeholder="Tu nombre" name="nombre" required />
           <Input type="email" placeholder="Tu correo: nombre@ejemplo.com" name="email" required />
           <Input type="tel" placeholder="Tu número: 123-456-7890" name="telefono" />
-          <Textarea placeholder="Escribe tu mensaje..." name="mensaje" required />
+          <Textarea minRows={6} placeholder="Escribe tu mensaje..." name="mensaje" required />
           <Button type="submit" color="primary" className="w-full">
             Enviar mensaje
           </Button>

@@ -8,6 +8,10 @@ const casaresImages = Object.values(
     import.meta.glob("../images/casares/*.jpg", { eager: true, query: "?url", import: "default" })
   );
 
+const otrosImages = Object.values(
+  import.meta.glob("../images/otros/*.jpg", { eager: true, query: "?url", import: "default" })
+);
+
 // Data de los proyectos
 const projects = [
     {
@@ -20,6 +24,11 @@ const projects = [
       title: "Obra Casares costa",
       images: casaresImages,
     },
+    {
+      key: "otros",
+      title: "Otros proyectos",
+      images: otrosImages,
+    },
   ];
 
 export default function Gallery() {
@@ -27,9 +36,9 @@ export default function Gallery() {
     <div className="w-full max-w-6xl mx-auto px-4 py-10">
       <h1 className="text-3xl font-bold text-center text-blue-800 mb-8">Galería de Proyectos</h1>
 
-      <Tabs aria-label="Galería de proyectos">
+      <Tabs color="primary" aria-label="Galería de proyectos" classNames={{tab: "whitespace-normal h-auto"}}>
         {projects.map((project) => (
-          <Tab key={project.key} title={project.title}>
+          <Tab key={project.key} title={<span className="whitespace-normal">{project.title}</span>}>
             <Card>
               <CardBody>
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">

@@ -7,7 +7,7 @@ export default function App() {
         <CardHeader className="flex gap-3">
             <Image
             alt="logo"
-            height={40}
+            height={30}
             radius="sm"
             src={logo}
             width={40}
@@ -43,8 +43,8 @@ export default function App() {
                 <div>
                     <h4 className="font-semibold mb-2">Contacto</h4>
                     <ul className="text-sm text-default-500 space-y-1">
-                    <li>Email: info@pinturastrafalgar.com</li>
-                    <li>Teléfono: +34 600 123 456</li>
+                    <li>Email: pinturastrafalgar@gmail.com</li>
+                    <li>Teléfono: +34 667 30 70 37</li>
                     <li>Dirección: Barbate, Cádiz, España</li>
                     </ul>
                 </div>

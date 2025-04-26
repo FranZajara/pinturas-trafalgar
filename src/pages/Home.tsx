@@ -40,7 +40,7 @@ export default function Home() {
         <Card>
           <CardHeader className="font-semibold text-lg">Rehabilitación de azoteas</CardHeader>
           <CardBody>
-            <p>Prevención de entradas de agua y mantenimiento de la pintura</p>
+            <p>Prevención de entradas de agua y mantenimiento de la pintura.</p>
           </CardBody>
         </Card>
       </div>
